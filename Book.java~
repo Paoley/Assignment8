@@ -3,7 +3,7 @@
 //
 //  Solution to Programming Project 5.7
 //********************************************************************
-import java.util.Scanner;
+
   
 public class Book
 {
@@ -40,29 +40,28 @@ public class Book
    //-----------------------------------------------------------------
    //  Mutators.
    //-----------------------------------------------------------------
-   Scanner input = new Scanner(System.in);
+
  
-   public void setTitle ()
+   public void setTitle (String t)
    {
    
      System.out.println("Enter the title of the book: ");
-     title = input.nextLine();
+     title = t;
      
    }
 
-   public void setAuthor ()
+   public void setAuthor (String a)
    {
    
      System.out.println ("Enter the name of the author(s): ");
-      author = input.nextLine();
-      
+      author = a;
    }
 
-   public void setIsbn ()
+   public void setIsbn (String i)
    {
    
      System.out.println ("Now enter the ISBN code: ");
-     isbn = input.nextLine();
+     isbn = i;
      
    }
 
@@ -71,6 +70,6 @@ public class Book
    //-----------------------------------------------------------------
    public String toString ()
    {
-      return isbn+ ", " + author + "." + title;
+      return "the ISBN is: " + isbn  + "," + "The Author is: " + author + "." + "The author is: " + title;
    }
 }

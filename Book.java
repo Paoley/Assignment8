@@ -45,7 +45,7 @@ public class Book
    public void setTitle (String t)
    {
    
-     System.out.println("Enter the title of the book: ");
+    // System.out.println("Enter the title of the book: ");
      title = t;
      
    }
@@ -53,14 +53,14 @@ public class Book
    public void setAuthor (String a)
    {
    
-     System.out.println ("Enter the name of the author(s): ");
+   //  System.out.println ("Enter the name of the author(s): ");
       author = a;
    }
 
    public void setIsbn (String i)
    {
    
-     System.out.println ("Now enter the ISBN code: ");
+   //  System.out.println ("Now enter the ISBN code: ");
      isbn = i;
      
    }
@@ -70,6 +70,6 @@ public class Book
    //-----------------------------------------------------------------
    public String toString ()
    {
-      return "the ISBN is: " + isbn  + "," + "The Author is: " + author + "." + "The author is: " + title;
+      return isbn  + "," + author + "."  + title;
    }
 }
